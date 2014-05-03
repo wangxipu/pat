@@ -3,8 +3,8 @@
 # runtime of python version is more than 10 ms 
 # because of the implementation 
 if __name__ == '__main__':
-    #string = raw_input()
-    n = 1073741824 #int(string)
+    string = raw_input()
+    n = int(string)
     r = 1
     counts_for_1 = 0
     ret, rem = divmod(n, r)
