@@ -24,7 +24,7 @@ def getPrime(n):
         x = x + 2
     return x       
  
-def insertToHashTale(table, TSize, x):
+def insertToHashTable(table, TSize, x):
     original_pos = x % TSize
     for i in xrange(TSize):
         pos = (original_pos + i * i) % TSize
@@ -40,7 +40,7 @@ if __name__ == '__main__':
     HashTable = [ -1 for x in xrange(TSize + 1) ]
     out_list = []
     for i in xrange(N):
-        pos = insertToHashTale(HashTable, TSize, li[i]) 
+        pos = insertToHashTable(HashTable, TSize, li[i]) 
         if pos != -1:
             out_list.append(str(pos))
         else:
