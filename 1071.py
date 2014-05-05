@@ -5,10 +5,8 @@ def wordCount(string):
     count = 0
     max_word = ''
     word_occ = {}
-    i = 0
-    m = re.findall('[0-9a-zA-Z]+', string)
-    for i in m:
-        word = i
+    word_list = re.findall('[0-9a-zA-Z]+', string)
+    for word in word_list:
         this = word_occ[word] = word_occ.get(word, 0) + 1
         if this > count:
             count = this
