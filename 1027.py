@@ -10,11 +10,10 @@ def getColorinMars(num):
     D = 13
     quo, rem = divmod(num, D)
     while quo != 0:
-        li.append(d[rem])
+        li[:0] = [ d[rem] ]
         quo, rem = divmod(quo, D)
         
-    li.append(d[rem])
-    li.reverse()
+    li[:0] = [ d[rem] ]
     return '0' * (2 - len(li)) + ''.join(li)
 
 if __name__ == '__main__':
