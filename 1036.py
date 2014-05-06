@@ -10,7 +10,7 @@ if __name__ == '__main__':
     num = int(raw_input())
     min_grade_student_M = Student('no_this_record', '-1', 101)
     max_grade_student_F = Student('no_this_record', '-1', -1)
-    for i in range(num):
+    for i in xrange(num):
         string = raw_input()
         li = string.split()
         grade = int(li[3])
