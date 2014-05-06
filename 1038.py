@@ -7,8 +7,6 @@ if __name__ == '__main__':
     li = raw_input().split()
     del li[0]
     li.sort(cmp = myCmp)
-    out_string = ''
-    
     str1 = li[0]
     str1_len = len(str1)
     i = 0
