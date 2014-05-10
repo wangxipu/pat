@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# timeout for the last case
+# TLE for the last case
 # whether or not using dict 
 
 if __name__ == '__main__':
