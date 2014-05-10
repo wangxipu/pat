@@ -13,6 +13,7 @@ int main()
     scanf("%d", &node_count);
     int nodes[node_count + 1];
     int sum = 0;
+    nodes[0] = 0;
     for (int i = 1; i < node_count + 1; i++)
     {
         int d;
