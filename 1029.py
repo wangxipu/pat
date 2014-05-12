@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-
 if __name__ == '__main__':
     seq1 = [ int(x) for i, x in enumerate(raw_input().split()) if i > 0 ]
     seq2 = [ int(x) for i, x in enumerate(raw_input().split()) if i > 0 ]
