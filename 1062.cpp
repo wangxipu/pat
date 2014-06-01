@@ -23,10 +23,6 @@ struct Person
     {
         return talent < HH && virtue < HH && virtue >= talent;
     }
-    bool other() const
-    {
-        return talent < HH && virtue < HH && virtue < talent;
-    }
 };
 
 bool commonCmp(const Person& a, const Person& b)
@@ -84,6 +80,7 @@ int main()
     LL = L;
     HH = H;
     vector<Person> v;
+    v.reserve(n);
     for (int i = 0; i < n; i ++)
     {
         int d, v1, t;
