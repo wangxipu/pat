@@ -49,13 +49,15 @@ void DFS(int cur, int s)
             {
                 continue;
             }
-        }else if(sum[next] < s)
+        }
+        else if(sum[next] < s)
         {
             DFS(next,s);
-        }else{
+        }
+        else
+        {
             continue;
         }
-
     }
 }
 
@@ -92,6 +94,6 @@ int main()
         return 0;
     }
     memcpy(sum, weight, n * sizeof(int));
-    DFS(0,s);    
+    DFS(0, s);    
     return 0;
 }
